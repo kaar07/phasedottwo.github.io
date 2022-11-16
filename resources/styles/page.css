@@ -44,6 +44,7 @@ body {
 }
 
 .bar-text-container:hover .sub-menu{
+    position: absolute;
     display: block;
 }
 @media (max-width : 500px) {

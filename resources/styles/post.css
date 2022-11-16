@@ -1,0 +1,59 @@
+:root{
+    --margin-small : 20%;
+    --margin-large : 80%;
+}
+.display-title-container{
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: 20vh;
+    background-color: rgb(211, 211, 211);
+}
+
+.display-title-text{
+    padding-top: 2em;
+    margin-left: var(--margin-small);
+    margin-right: var(--margin-small);
+}
+
+.display-title-subtext{
+    padding-bottom: 1em;
+    margin-left: var(--margin-small);
+    margin-right: var(--margin-small);
+}
+
+.post-metainfo{
+    display: grid;
+    margin-left: var(--margin-small);
+    margin-right: var(--margin-small);
+    padding: 1em 0;
+    grid-template-columns: 50% 50%;
+}
+
+.post-regular{
+    margin-left: var(--margin-small);
+    margin-right: var(--margin-small);
+}
+
+.wiki-right{
+    float: right;
+}
+
+.wiki-right img{
+    width: 25vh;
+    height: auto;
+}
+
+
+@media (max-width : 500px) {
+    :root{
+        --margin-small : 5%;
+    }
+    .wiki-right{
+        float: none;
+    }
+    .wiki-right img{
+        display: block;
+        margin: auto;
+    }
+}
