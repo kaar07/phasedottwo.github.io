@@ -1,6 +1,6 @@
-const toggleButton = document.getElementById("toggle-button");
+const toggleButton = document.getElementById("navbar--button");
 toggleButton.addEventListener("click", ()=>{
-    let barList = document.getElementById("bar-list");
+    let barList = document.getElementById("navbar--menu");
     if(barList.style.display === ""){
         barList.style.display = "flex";
         toggleButton.innerHTML = "Close";
