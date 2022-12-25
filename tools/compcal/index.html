@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="script.js"></script>
+    <title>Compounding caculator</title>
+</head>
+<body>
+    <h1>Compounding Calculator</h1>
+    <form>
+        <label for="principal"> Principal amount : </label>
+        <input id="principal" type="number" name="principal">
+        <br>
+        <label for="interest"> Compound Interest : </label>
+        <input id="interest" type="number" name="interest">
+        <br>
+        <label for="frequency"> Compounding frequency : </label>
+        <select name="frequency" id="frequency">
+            <option value="annually"> Annually </option>
+            <option value="quarterly"> Quarterly </option>
+            <option value="monthly"> Monthly </option>
+        </select>
+        <br>
+        <label for="period"> For Period in years: </label>
+        <input id="period" type="number" name="period">
+        <br>
+        <button type="button" id="calButton"> Submit </button>
+        <button type="reset" id="clearall"> Clear all</button>
+    </form>
+    <div id="displayValue"></div>
+</body>
+</html>
