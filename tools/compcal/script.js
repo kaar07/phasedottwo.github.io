@@ -16,9 +16,15 @@ let calButton = document.getElementById("calButton").addEventListener("click", (
     if(displayCon.innerHTML === ""){
         displayCon.innerHTML += "From given information, the amount will compound to a net value of " + netValue;
     }
+    // for future purposes
+    let valid = true;
+    if(valid){
+        displayCon.style.display = "block";
+    }
 });
 
 let clearButton = document.getElementById("clearall").addEventListener("click", ()=>{
     displayCon = document.getElementById("displayValue");
     displayCon.innerHTML = "";
+    displayCon.style.display = "none";
 });

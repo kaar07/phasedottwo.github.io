@@ -1,34 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <script defer src="script.js"></script>
-    <title>Compounding caculator</title>
-</head>
-<body>
-    <h1>Compounding Calculator</h1>
+    <title>Compounding calculator</title>
+  </head>
+  <body>
+    <div class="topbar">
+      <div class="topbar--toolname">Compounding Calculator</div>
+    </div>
     <form>
+      <div class="form-group">
         <label for="principal"> Principal amount : </label>
-        <input id="principal" type="number" name="principal">
-        <br>
+        <br />
+        <input id="principal" type="number" name="principal" placeholder="INR" />
+      </div>
+      <br />
+      <div class="form-group">
         <label for="interest"> Compound Interest : </label>
-        <input id="interest" type="number" name="interest">
-        <br>
+        <br />
+        <input id="interest" type="number" name="interest" placeholder="in percentage per annum" />
+      </div>
+      <br />
+      <div class="form-group">
         <label for="frequency"> Compounding frequency : </label>
+        <br />
         <select name="frequency" id="frequency">
-            <option value="annually"> Annually </option>
-            <option value="quarterly"> Quarterly </option>
-            <option value="monthly"> Monthly </option>
+          <option value="annually">Annually</option>
+          <option value="quarterly">Quarterly</option>
+          <option value="monthly">Monthly</option>
         </select>
-        <br>
-        <label for="period"> For Period in years: </label>
-        <input id="period" type="number" name="period">
-        <br>
-        <button type="button" id="calButton"> Submit </button>
-        <button type="reset" id="clearall"> Clear all</button>
+      </div>
+      <br />
+      <div class="form-group">
+        <label for="period"> Investment period: </label>
+        <br />
+        <input id="period" type="number" name="period" placeholder="in number of years"/>
+      </div>
+      <br />
+      <div class="buttons">
+        <button type="button" id="calButton">Submit</button>
+        <button type="reset" id="clearall">Clear all</button>
+      </div>
+      <div class="form-group" id="displayValue"></div>
     </form>
-    <div id="displayValue"></div>
-</body>
+  </body>
 </html>

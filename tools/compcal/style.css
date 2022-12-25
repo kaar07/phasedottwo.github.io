@@ -1,0 +1,70 @@
+body,html{
+    margin: 0%;
+}
+
+body{
+    background-color: rgb(147, 160, 255);
+}
+.topbar{
+    height: 3em;
+    width: 100%;
+    background-color: #c9c9c9;
+    text-align: center;
+}
+
+.topbar--toolname{
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+}
+
+form{
+    max-width: 50%;
+    margin: auto;
+    text-align: center;
+    height: 100%;
+    padding-top: 5em;
+}
+
+.form-group{
+    display: inline-block;
+    background-color: white;
+    text-align: left;
+    padding: 1em;
+    width: 100%;
+    border-radius: 0.25em;
+}
+
+input, select{
+    position: relative;
+    border-color: black;
+    border-width: 0.2em;
+    border-left: none;
+    border-right: none;
+    border-top : none;
+    width: 100%;
+    padding-top: 1em;
+}
+
+input{
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+#displayValue{
+    display: none;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 2em;
+}
+
+button{
+    padding: 1em;
+    background-color: maroon;
+    color: white;
+    border-radius: 0.25em;
+}
